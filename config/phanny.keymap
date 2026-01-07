@@ -19,11 +19,11 @@
 
         layer_1 {
             bindings = <
-              &kp LG(L)  &trans        &trans        &kp BACKSPACE  &kp ENTER         &kp C_VOLUME_UP    &trans   &trans  &trans  &kp MINUS
-&kp CAPSLOCK  &trans     &kp UP_ARROW  &trans        &trans         &trans            &kp C_VOLUME_DOWN  &trans   &trans  &trans  &trans     &kp EQUAL
-&trans        &kp LEFT   &kp DOWN      &kp RIGHT     &trans         &trans            &kp K_MUTE         &trans   &trans  &trans  &trans     &trans
-&trans        &trans     &bt BT_CLR    &bt BT_SEL 2  &bt BT_SEL 1   &bt BT_SEL 0      &trans             &trans   &trans  &trans  &trans     &trans
-                                       &trans        &trans         &trans            &trans             &kp DEL  &trans
+              &kp LG(L)  &trans        &trans        &kp BACKSPACE  &kp ENTER         &kp K_MUTE       &kp C_VOL_DN     &kp C_VOLUME_UP  &trans  &kp MINUS
+&kp CAPSLOCK  &trans     &kp UP_ARROW  &trans        &trans         &trans            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans     &kp EQUAL
+&trans        &kp LEFT   &kp DOWN      &kp RIGHT     &trans         &trans            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans     &trans
+&trans        &trans     &bt BT_CLR    &bt BT_SEL 2  &bt BT_SEL 1   &bt BT_SEL 0      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans     &trans
+                                       &trans        &trans         &trans            &trans           &kp DEL          &kp KP_NUMBER_0
             >;
         };
     };
