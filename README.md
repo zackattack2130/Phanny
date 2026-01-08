@@ -1,3 +1,134 @@
+Phanny
+
+Phanny is a 52 key wireless split ortholinear keyboard with a gentle splay and a clean, compact form factor. It is powered by nice!nano microcontrollers and designed to run ZMK firmware. This repository documents the entire journey of taking a keyboard idea from early sketches to a fully manufactured PCB.
+
+This is my first public GitHub hardware project so please allow me some grace if something is unconventional or not perfectly organized yet. My goal is to expand this documentation over time as the board evolves.
+
+Overview
+
+Phanny was never a handwired prototype. Instead it is a direct evolution of lessons learned from my previous project, Reach, which was a handwired low profile split board. Reach taught me what worked and what did not for my hands and workflow. Phanny exists as the refined version of that concept with improved ergonomics, a full height switch option, a number row, and a cleaner splayed shape.
+
+PCBWay generously sponsored the first fabricated revision of this design after contacting me and asking if I would be interested in trying their PCB production service.
+
+Project Goals
+
+Take what I liked about Reach and build a more capable board:
+A split wireless layout
+Ortholinear grid with a light column stagger and splay
+A proper number row
+Better thumb key positioning
+Full travel MX switches
+Support for nice!nano microcontrollers running ZMK
+
+Design Inspiration
+
+Reach proved the value of:
+Wireless use
+Split halves
+Columnar ergonomics
+Minimal desk footprint
+
+However it also revealed areas worth improving:
+Thumb comfort over long typing sessions
+A need for a number row for work
+More natural outer column angles
+Better hand separation and shoulder alignment
+
+Phanny’s design attempts to solve those problems by adjusting key angles, removing unused corner keys, and giving each half more ergonomic space.
+
+Learning KiCad
+
+Since Phanny jumped straight into PCB design without a handwired transition stage, I had to learn the tools from scratch. I followed tutorials from Joe Scotto and Modern Hobbyist that covered:
+Installing KiCad
+Keyboard-specific footprint libraries
+Matrix design basics
+Schematic creation and linking footprints
+PCB layout and routing fundamentals
+
+KiCad has a learning curve but gives you full control over the board.
+
+Schematic Stage
+
+Work in the schematic editor included:
+Adding each MX switch
+Placing one diode per switch
+Assigning every part a footprint
+Connecting rows and columns into a matrix
+Linking everything to the nice!nano pins
+
+One critical lesson was verifying MCU pin availability early. My first revision assigned a few pins I later wished I had reserved for features like an OLED add-on. Future iterations will address that.
+
+PCB Layout Stage
+
+After the schematic was verified, the board was transferred to the PCB editor. From there I:
+Placed switches into the final grid
+Shaped the board outline and split curves
+Positioned the nice!nano socket and diodes
+Routed row and column traces cleanly
+Added mounting holes and symmetry adjustments
+
+Seeing raw footprints gradually turn into a polished board was easily the most rewarding part of the process.
+
+Manufacturing
+
+Once the Gerbers were exported, PCBWay handled fabrication. Their ordering flow was straightforward and the boards went from upload to final production faster than expected. The first batch will be used for assembly and testing documented here.
+
+Assembly and Testing
+
+This repo will later include:
+Soldering order and tools needed
+Socket and diode orientation notes
+Firmware flashing and reset options
+Wireless pairing
+Per-half testing
+Troubleshooting and known quirks
+
+Firmware
+
+Phanny runs ZMK wireless with:
+nice!nano microcontrollers
+Col2Row diode direction
+Per-half matrix scanning
+Battery operation with optional switches
+Future OLED support planned for next revision
+
+Shield definitions, keymaps, and config files will be added as I finalize the firmware.
+
+Roadmap
+
+Future additions will include:
+Improved thumb cluster geometry
+OLED-ready pin routing
+Case and plate STL files
+Hotswap support
+Reset switches and power latching
+Optional RGB support
+A full assembly guide with photos
+
+Bill of Materials
+
+A complete BOM will be shared after full assembly and testing, but core parts include:
+2 x nice!nano v2 (or compatible)
+52 x MX switches
+52 x signal diodes (1N4148 or equivalent)
+LiPo batteries (120–250 mAh range)
+Screws, standoffs, sockets
+
+Closing
+
+Phanny represents everything I learned from my handwired Reach build combined with new tools and techniques. If you are here researching your first PCB keyboard project, I hope this repository helps you take the leap. There is nothing better than watching something you designed come back from a manufacturer ready to solder and type on.
+
+More updates will follow as the design matures and more improvements are made.
+
+
+
+
+
+
+
+
+
+
 # ZMK Configuration for Phanny
 
 *Generated by Shield Wizard for ZMK*
