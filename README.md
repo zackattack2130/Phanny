@@ -1,4 +1,4 @@
-<h1>Phanny/h1>
+Phanny
 
 Phanny is a 52 key wireless split ortholinear keyboard with a gentle splay and a clean, compact form factor. It is powered by nice!nano microcontrollers and designed to run ZMK firmware. This repository documents the entire journey of taking a keyboard idea from early sketches to a fully manufactured PCB.
 
