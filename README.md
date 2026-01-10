@@ -52,7 +52,9 @@ Then came drawing the board outline. Adding “Edge Cuts” was another problem 
 
 ## Submitting to PCBWay
 
-After fixing all visible errors, I sent the Gerber files to PCBWay using their plug-in. The system takes you to their site with the technical info pre-filled. You choose solder, solder mask color, silkscreen, and hit “Add to cart.”    ![KiCad Plug-ins](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Plug-ins.jpg)
+![KiCad Plug-ins](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Plug-ins.jpg)
+
+After fixing all visible errors, I sent the Gerber files to PCBWay using their plug-in. The system takes you to their site with the technical info pre-filled. You choose solder, solder mask color, silkscreen, and hit “Add to cart.”    
 
 Someone from PCBWay reviews your work and points out issues. My reviewer noticed I accidentally set huge mounting holes (2mm *radius*, not diameter) and fixed it. They also recommended thinning the break seam so both halves would snap cleanly apart. I happily let the experts help.
 
