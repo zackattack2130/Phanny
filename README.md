@@ -17,6 +17,8 @@ This board would not have come to life if not for Aran from [PCBWay](https://www
 
 I knew the basics of what I wanted: split, ortho, staggered column, splay, and a num-row. I decided to get the layout dialed in using the well-known [Keyboard Layout Editor](https://www.keyboard-layout-editor.com/#/) I started playing around with different layouts and testing different splay angles. Then I adjusted how much column stagger I wanted. My aim was to make something comfortable when reaching for any key. Another issue I knew I wanted to overcome from prior boards was the thumb cluster. Thanks to printing several test plates, I think I landed on something very comfortable for long typing sessions while still leaving enough keys that I don’t feel forced into multiple layers.
 
+https://github.com/zackattack2130/Phanny/blob/58f0d157ff808af860c822ecdb482829a4d1ce61/Images/Fusion%20Plate.jpg
+
 ---
 
 ## KiCad
@@ -71,6 +73,10 @@ I exported my PCB from KiCad into Fusion360. I included all components so I coul
 A YouTuber I watch, Stuff Made Here, says something like:
 “Don’t design around a mistake instead of fixing it. It will cause more problems later.”
 I ignored that advice from someone who builds robots, the proceded to go through about twelve different case iterations until landing on the one I’m sharing here.
+
+![Fusion Case Top](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20Case%20Top.jpg)
+![Fusion Base](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20Base.jpg)
+
 
 ---
 
