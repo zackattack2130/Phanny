@@ -1,4 +1,4 @@
-# Phanny – 52 Key Split
+# Phanny – A 52 Key Wireless Split Keyboard 
 
 ![Phanny](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Top%20Complete.jpg)
 
