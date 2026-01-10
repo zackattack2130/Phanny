@@ -56,13 +56,21 @@ Someone from PCBWay reviews your work and points out issues. My reviewer noticed
 
 One week later, I had five pristine PCBs. Holding a board you designed—and having it look good—is a feeling I now crave. I went with flat black PCBs with white accents. Safe choice, great look.
 
+![Packaged PCBs](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Packaged%20PCBs.jpg)
+
+
 ---
 
 ## Case Design
 
-I exported my PCB from KiCad into Fusion360. I included all components so I could design around them with confidence (because I had already done enough guessing elsewhere). A YouTuber I watch, Stuff Made Here, says something like:
+I exported my PCB from KiCad into Fusion360. I included all components so I could design around them with confidence (because I had already done enough guessing elsewhere).
+
+![Fusion PCB View](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20PCB%20All%20Top.jpg)
+![Fusion PCB Bottom View](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20PCB%20All%20Bottom.jpg)
+
+A YouTuber I watch, Stuff Made Here, says something like:
 “Don’t design around a mistake instead of fixing it. It will cause more problems later.”
-I ignored that advice from someone who builds robots. I went through about twelve different case iterations until landing on the one I’m sharing here.
+I ignored that advice from someone who builds robots, the proceded to go through about twelve different case iterations until landing on the one I’m sharing here.
 
 ---
 
