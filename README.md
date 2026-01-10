@@ -28,6 +28,9 @@ After finalizing my design, I moved into new territory: KiCad, a software progra
 
 ## Schematic
 
+![Phanny Schematic](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Schematic.jpg)
+
+
 The schematic editor was the easy part. It’s like designing a matrix—because it *is* designing the matrix—but instead of copper wire, it's pixels on a screen. This is where my lack of knowledge showed. I didn’t realize I could just copy the left, paste, then flip. So I ended up doubling my work.
 
 Once I fixed all my errors, I clicked the PCB Editor and hit “Update PCB from Schematic.” Suddenly I had 52 MX footprints, 52 1N4148 diode footprints, and 2 nice!nano footprints neatly arranged. Thankfully, Modern Hobbyist’s video showed plug-ins that make placing switches based on Keyboard Layout Editor files much easier.
@@ -35,6 +38,9 @@ Once I fixed all my errors, I clicked the PCB Editor and hit “Update PCB from 
 ---
 
 ## PCB Routing
+
+![PCB Editor](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/PCB%20Editor.jpg)
+
 
 Routing traces is basically a game of connect-the-dots, except the final picture is *not* a bear. This was challenging because you have to avoid blocking access to any other rows or columns. Pin by pin I worked through it until everything was connected and looking decent (to someone who knows nothing about circuitry).
 
@@ -44,7 +50,7 @@ Then came drawing the board outline. Adding “Edge Cuts” was another problem 
 
 ## Submitting to PCBWay
 
-After fixing all visible errors, I sent the Gerber files to PCBWay using their plug-in. The system takes you to their site with the technical info pre-filled. You choose solder, solder mask color, silkscreen, and hit “Add to cart.”
+After fixing all visible errors, I sent the Gerber files to PCBWay using their plug-in. The system takes you to their site with the technical info pre-filled. You choose solder, solder mask color, silkscreen, and hit “Add to cart.”    ![KiCad Plug-ins](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Plug-ins.jpg)
 
 Someone from PCBWay reviews your work and points out issues. My reviewer noticed I accidentally set huge mounting holes (2mm *radius*, not diameter) and fixed it. They also recommended thinning the break seam so both halves would snap cleanly apart. I happily let the experts help.
 
