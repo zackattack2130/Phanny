@@ -1,124 +1,88 @@
-#Phanny
+# Phanny – 52 Key Split
 
-Phanny is a 52 key wireless split ortholinear keyboard with a gentle splay and a clean, compact form factor. It is powered by nice!nano microcontrollers and designed to run ZMK firmware. This repository documents the entire journey of taking a keyboard idea from early sketches to a fully manufactured PCB.
+This repo is going to show the process of me designing, printing, working in KiCad, Fusion360, and overall building this split keyboard. I plan to explain the issues I didn’t know were issues until it was too late, and show how I managed to overcome some of the problems in the initial design.
 
-This is my first public GitHub hardware project so please allow me some grace if something is unconventional or not perfectly organized yet. My goal is to expand this documentation over time as the board evolves.
+---
 
-Overview
+## The Design
 
-Phanny was never a handwired prototype. Instead it is a direct evolution of lessons learned from my previous project, Reach, which was a handwired low profile split board. Reach taught me what worked and what did not for my hands and workflow. Phanny exists as the refined version of that concept with improved ergonomics, a full height switch option, a number row, and a cleaner splayed shape.
+This board would not have come to life if not for Aran from PCBWay. He reached out to me to see if I had any interest in working on another project, this time utilizing their PCB manufacturing service. I enjoyed the work they did on a case I designed, and I love trying new things, so I took him up on his offer and got to work.
 
-PCBWay generously sponsored the first fabricated revision of this design after contacting me and asking if I would be interested in trying their PCB production service.
+I knew the basics of what I wanted: split, ortho, staggered column, splay, and a num-row. I decided to get the layout dialed in using the well-known Keyboard Layout Editor. I started playing around with different layouts and testing different splay angles. Then I adjusted how much column stagger I wanted. My aim was to make something comfortable when reaching for any key. Another issue I knew I wanted to overcome from prior boards was the thumb cluster. Thanks to printing several test plates, I think I landed on something very comfortable for long typing sessions while still leaving enough keys that I don’t feel forced into multiple layers.
 
-Project Goals
+---
 
-Take what I liked about Reach and build a more capable board:
-A split wireless layout
-Ortholinear grid with a light column stagger and splay
-A proper number row
-Better thumb key positioning
-Full travel MX switches
-Support for nice!nano microcontrollers running ZMK
+## KiCad
 
-Design Inspiration
+After finalizing my design, I moved into new territory: KiCad, a software program for designing circuit boards, schematics, and PCBs. I spent longer than expected trying to learn on the fly like I did with Fusion360, and that landed me with nothing but wasted time. I turned to YouTube and watched the tutorial videos from Modern Hobbyist (Designing a Custom Keyboard PCB FROM SCRATCH!) and Joe Scotto (How to Design Mechanical Keyboard PCBs with KiCad). Combined, their videos give enough of a breakdown that anyone could design a PCB, and both creators offer downloadable packages containing parts and footprints.
 
-Reach proved the value of:
-Wireless use
-Split halves
-Columnar ergonomics
-Minimal desk footprint
+---
 
-However it also revealed areas worth improving:
-Thumb comfort over long typing sessions
-A need for a number row for work
-More natural outer column angles
-Better hand separation and shoulder alignment
+## Schematic
 
-Phanny’s design attempts to solve those problems by adjusting key angles, removing unused corner keys, and giving each half more ergonomic space.
+The schematic editor was the easy part. It’s like designing a matrix—because it *is* designing the matrix—but instead of copper wire, it's pixels on a screen. This is where my lack of knowledge showed. I didn’t realize I could just copy the left, paste, then flip. So I ended up doubling my work.
 
-Learning KiCad
+Once I fixed all my errors, I clicked the PCB Editor and hit “Update PCB from Schematic.” Suddenly I had 52 MX footprints, 52 1N4148 diode footprints, and 2 nice!nano footprints neatly arranged. Thankfully, Modern Hobbyist’s video showed plug-ins that make placing switches based on Keyboard Layout Editor files much easier.
 
-Since Phanny jumped straight into PCB design without a handwired transition stage, I had to learn the tools from scratch. I followed tutorials from Joe Scotto and Modern Hobbyist that covered:
-Installing KiCad
-Keyboard-specific footprint libraries
-Matrix design basics
-Schematic creation and linking footprints
-PCB layout and routing fundamentals
+---
 
-KiCad has a learning curve but gives you full control over the board.
+## PCB Routing
 
-Schematic Stage
+Routing traces is basically a game of connect-the-dots, except the final picture is *not* a bear. This was challenging because you have to avoid blocking access to any other rows or columns. Pin by pin I worked through it until everything was connected and looking decent (to someone who knows nothing about circuitry).
 
-Work in the schematic editor included:
-Adding each MX switch
-Placing one diode per switch
-Assigning every part a footprint
-Connecting rows and columns into a matrix
-Linking everything to the nice!nano pins
+Then came drawing the board outline. Adding “Edge Cuts” was another problem I discovered later. I rushed the design, eyeballed the right PCB instead of mirroring properly, and got bit in the ass designing the case.
 
-One critical lesson was verifying MCU pin availability early. My first revision assigned a few pins I later wished I had reserved for features like an OLED add-on. Future iterations will address that.
+---
 
-PCB Layout Stage
+## Submitting to PCBWay
 
-After the schematic was verified, the board was transferred to the PCB editor. From there I:
-Placed switches into the final grid
-Shaped the board outline and split curves
-Positioned the nice!nano socket and diodes
-Routed row and column traces cleanly
-Added mounting holes and symmetry adjustments
+After fixing all visible errors, I sent the Gerber files to PCBWay using their plug-in. The system takes you to their site with the technical info pre-filled. You choose solder, solder mask color, silkscreen, and hit “Add to cart.”
 
-Seeing raw footprints gradually turn into a polished board was easily the most rewarding part of the process.
+Someone from PCBWay reviews your work and points out issues. My reviewer noticed I accidentally set huge mounting holes (2mm *radius*, not diameter) and fixed it. They also recommended thinning the break seam so both halves would snap cleanly apart. I happily let the experts help.
 
-Manufacturing
+One week later, I had five pristine PCBs. Holding a board you designed—and having it look good—is a feeling I now crave. I went with flat black PCBs with white accents. Safe choice, great look.
 
-Once the Gerbers were exported, PCBWay handled fabrication. Their ordering flow was straightforward and the boards went from upload to final production faster than expected. The first batch will be used for assembly and testing documented here.
+---
 
-Assembly and Testing
+## Case Design
 
-This repo will later include:
-Soldering order and tools needed
-Socket and diode orientation notes
-Firmware flashing and reset options
-Wireless pairing
-Per-half testing
-Troubleshooting and known quirks
+I exported my PCB from KiCad into Fusion360. I included all components so I could design around them with confidence (because I had already done enough guessing elsewhere). A YouTuber I watch, Stuff Made Here, says something like:
 
-Firmware
+> “Don’t design around a mistake instead of fixing it. It will cause more problems later.”
 
-Phanny runs ZMK wireless with:
-nice!nano microcontrollers
-Col2Row diode direction
-Per-half matrix scanning
-Battery operation with optional switches
-Future OLED support planned for next revision
+I ignored that advice from someone who builds robots. I went through about twelve different case iterations until landing on the one I’m sharing here.
 
-Shield definitions, keymaps, and config files will be added as I finalize the firmware.
+---
 
-Roadmap
+## Assembly & Soldering
 
-Future additions will include:
-Improved thumb cluster geometry
-OLED-ready pin routing
-Case and plate STL files
-Hotswap support
-Reset switches and power latching
-Optional RGB support
-A full assembly guide with photos
+Time to solder and hope I correctly referenced the schematic.
 
-Bill of Materials
+Order of operations:
 
-A complete BOM will be shared after full assembly and testing, but core parts include:
-2 x nice!nano v2 (or compatible)
-52 x MX switches
-52 x signal diodes (1N4148 or equivalent)
-LiPo batteries (120–250 mAh range)
-Screws, standoffs, sockets
+1. Diodes (through-hole, top side)
+2. MCU socket headers
+3. Battery wires to BAT+ and BAT-
+   **Design flaw**: I forgot a dedicated power connector
+4. Latching switch to battery and pads
+   **IMPORTANT**: Positive to positive, negative to negative
+   Best case: you fry an MCU
+   Worst case: angry lithium fire rock
+5. Switches
 
-Closing
+Then for the first time, I plugged in *one half* of the keyboard.
 
-Phanny represents everything I learned from my handwired Reach build combined with new tools and techniques. If you are here researching your first PCB keyboard project, I hope this repository helps you take the leap. There is nothing better than watching something you designed come back from a manufacturer ready to solder and type on.
+---
 
-More updates will follow as the design matures and more improvements are made.
+## Firmware
+
+Thanks to help on previous builds, I was pointed to the **ZMK Shield Wizard**, and it changed everything. It walks you step-by-step through generating your firmware. In about 20 minutes you can go from a pile of solder, copper, and silicon to a fully functional wireless keyboard.
+
+---
+
+## Completion
+
+Next, I screwed the plate and PCB into the case and—viola—Phanny was born.
 
 
 
