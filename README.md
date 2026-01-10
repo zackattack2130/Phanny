@@ -7,6 +7,21 @@ This repo is going to show the process of me designing, printing, working in KiC
 
 ---
 
+## Bill of Materials (Parts Used)
+
+* **[52x Akko Lavender Purple MX switches](https://a.co/d/eYtUOfr)**
+* **[52x Bojack 1N4148 diodes](https://a.co/d/55k6egk)**
+* **[2x nice!nano compatible microcontrollers (clones)](https://a.co/d/dAoMDN4)**
+* **2x 250 mAh Li-Po batteries**
+* **2x latching power switch**
+* **YMDK XDA profile keycap set**
+* **Hand-designed Phanny PCBs** (manufactured by PCBWay)
+* **3D printed PLA+ case** (plate & base)
+* **M2 screws and Heat Set Inserts** for assembly
+* **Socket headers for MCU**
+* **Small gauge wire for BAT+ / BAT-**
+
+
 ## The Design
 
 ![KLE Layout](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/KLE.jpg)
