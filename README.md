@@ -61,9 +61,7 @@ One week later, I had five pristine PCBs. Holding a board you designed—and hav
 ## Case Design
 
 I exported my PCB from KiCad into Fusion360. I included all components so I could design around them with confidence (because I had already done enough guessing elsewhere). A YouTuber I watch, Stuff Made Here, says something like:
-
-> “Don’t design around a mistake instead of fixing it. It will cause more problems later.”
-
+“Don’t design around a mistake instead of fixing it. It will cause more problems later.”
 I ignored that advice from someone who builds robots. I went through about twelve different case iterations until landing on the one I’m sharing here.
 
 ---
@@ -90,7 +88,7 @@ Then for the first time, I plugged in *one half* of the keyboard.
 
 ## Firmware
 
-Thanks to help on previous builds, I was pointed to the **ZMK Shield Wizard**, and it changed everything. It walks you step-by-step through generating your firmware. In about 20 minutes you can go from a pile of solder, copper, and silicon to a fully functional wireless keyboard.
+Thanks to help on previous builds, I was pointed to the **[Shield Wizard for ZMK](https://shield-wizard.genteure.workers.dev/)**, and it changed everything. It walks you step-by-step through generating your firmware. In about 20 minutes you can go from a pile of solder, copper, and silicon to a fully functional wireless keyboard. Then you have to edit your keymap. it will be in alphebetical order when the firmware is built. This is easy if you use **[ZMK Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)**
 
 ---
 
