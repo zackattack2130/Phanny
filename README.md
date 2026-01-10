@@ -78,7 +78,8 @@ I ignored that advice from someone who builds robots, the proceded to go through
 
 ![Fusion Case Top](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20Case%20Top.jpg)
 ![Fusion Base](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20Base.jpg)
-
+![Fusion Mounting](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20Mounting.jpg)
+![Fusion Leg Standoff](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20Leg%20Standoff.jpg)
 
 ---
 
@@ -104,7 +105,7 @@ Then for the first time, I plugged in *one half* of the keyboard.
 
 ## Firmware
 
-Thanks to help on previous builds, I was pointed to the **[Shield Wizard for ZMK](https://shield-wizard.genteure.workers.dev/)**, and it changed everything. It walks you step-by-step through generating your firmware. In about 20 minutes you can go from a pile of solder, copper, and silicon to a fully functional wireless keyboard. Then you have to edit your keymap. it will be in alphebetical order when the firmware is built. This is easy if you use **[ZMK Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)**
+Thanks to help on previous builds, I was pointed to the **[Shield Wizard for ZMK](https://shield-wizard.genteure.workers.dev/)**, and it changed everything. It walks you step-by-step through generating your firmware. In about 20 minutes you can go from a pile of solder, copper, and silicon to a fully functional wireless keyboard. **Then you have to edit your keymap.** it will be in alphebetical order when the firmware is built. This is easy if you use **[ZMK Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)**
 
 ---
 
