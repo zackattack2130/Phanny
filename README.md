@@ -9,18 +9,19 @@ This repo is going to show the process of me designing, printing, working in KiC
 
 ## The Design
 
+![KLE Layout](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/KLE.jpg)
+
+
 This board would not have come to life if not for Aran from [PCBWay](https://www.pcbway.com/)
 . He reached out to me to see if I had any interest in working on another project, this time utilizing their PCB manufacturing service. I enjoyed the work they did on a case I designed, and I love trying new things, so I took him up on his offer and got to work.
 
-I knew the basics of what I wanted: split, ortho, staggered column, splay, and a num-row. I decided to get the layout dialed in using the well-known Keyboard Layout Editor. I started playing around with different layouts and testing different splay angles. Then I adjusted how much column stagger I wanted. My aim was to make something comfortable when reaching for any key. Another issue I knew I wanted to overcome from prior boards was the thumb cluster. Thanks to printing several test plates, I think I landed on something very comfortable for long typing sessions while still leaving enough keys that I don’t feel forced into multiple layers.
+I knew the basics of what I wanted: split, ortho, staggered column, splay, and a num-row. I decided to get the layout dialed in using the well-known [Keyboard Layout Editor](https://www.keyboard-layout-editor.com/#/) I started playing around with different layouts and testing different splay angles. Then I adjusted how much column stagger I wanted. My aim was to make something comfortable when reaching for any key. Another issue I knew I wanted to overcome from prior boards was the thumb cluster. Thanks to printing several test plates, I think I landed on something very comfortable for long typing sessions while still leaving enough keys that I don’t feel forced into multiple layers.
 
 ---
 
 ## KiCad
 
-After finalizing my design, I moved into new territory: KiCad, a software program for designing circuit boards, schematics, and PCBs. I spent longer than expected trying to learn on the fly like I did with Fusion360, and that landed me with nothing but wasted time. I turned to YouTube and watched the tutorial videos from Modern Hobbyist [Modern Hobbyist – Designing a Custom Keyboard PCB FROM SCRATCH](https://www.youtube.com/watch?v=u13yRbBiRYM)
-
- and Joe Scotto [How to Design Mechanical Keyboard PCBs with KiCad](https://www.youtube.com/watch?v=8WXpGTIbxlQ)
+After finalizing my design, I moved into new territory: KiCad, a software program for designing circuit boards, schematics, and PCBs. I spent longer than expected trying to learn on the fly like I did with Fusion360, and that landed me with nothing but wasted time. I turned to YouTube and watched the tutorial videos from Modern Hobbyist [Modern Hobbyist – Designing a Custom Keyboard PCB FROM SCRATCH](https://www.youtube.com/watch?v=u13yRbBiRYM) and Joe Scotto [How to Design Mechanical Keyboard PCBs with KiCad](https://www.youtube.com/watch?v=8WXpGTIbxlQ)
 . Combined, their videos give enough of a breakdown that anyone could design a PCB, and both creators offer downloadable packages containing parts and footprints.
 
 ---
