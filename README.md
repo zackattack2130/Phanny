@@ -1,7 +1,5 @@
 # Phanny – 52 Key Split
 
-![Phanny](Phanny/Images/Top Complete.jpg at main · zackattack2130/Phanny)
-
 This repo is going to show the process of me designing, printing, working in KiCad, Fusion360, and overall building this split keyboard. I plan to explain the issues I didn’t know were issues until it was too late, and show how I managed to overcome some of the problems in the initial design.
 
 ---
