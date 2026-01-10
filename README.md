@@ -17,7 +17,7 @@ This board would not have come to life if not for Aran from [PCBWay](https://www
 
 I knew the basics of what I wanted: split, ortho, staggered column, splay, and a num-row. I decided to get the layout dialed in using the well-known [Keyboard Layout Editor](https://www.keyboard-layout-editor.com/#/) I started playing around with different layouts and testing different splay angles. Then I adjusted how much column stagger I wanted. My aim was to make something comfortable when reaching for any key. Another issue I knew I wanted to overcome from prior boards was the thumb cluster. Thanks to printing several test plates, I think I landed on something very comfortable for long typing sessions while still leaving enough keys that I don’t feel forced into multiple layers.
 
-https://github.com/zackattack2130/Phanny/blob/58f0d157ff808af860c822ecdb482829a4d1ce61/Images/Fusion%20Plate.jpg
+![Fusion Plate](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Fusion%20Plate.jpg)
 
 ---
 
