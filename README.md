@@ -14,7 +14,9 @@ I knew the basics of what I wanted: split, ortho, staggered column, splay, and a
 
 ## KiCad
 
-After finalizing my design, I moved into new territory: KiCad, a software program for designing circuit boards, schematics, and PCBs. I spent longer than expected trying to learn on the fly like I did with Fusion360, and that landed me with nothing but wasted time. I turned to YouTube and watched the tutorial videos from Modern Hobbyist (Designing a Custom Keyboard PCB FROM SCRATCH!) and Joe Scotto (How to Design Mechanical Keyboard PCBs with KiCad). Combined, their videos give enough of a breakdown that anyone could design a PCB, and both creators offer downloadable packages containing parts and footprints.
+After finalizing my design, I moved into new territory: KiCad, a software program for designing circuit boards, schematics, and PCBs. I spent longer than expected trying to learn on the fly like I did with Fusion360, and that landed me with nothing but wasted time. I turned to YouTube and watched the tutorial videos from Modern Hobbyist [Modern Hobbyist - Designing a Custom Keyboard PCB FROM SCRATCH](https://www.youtube.com/watch?v=xxxxx)
+ and Joe Scotto [Joe Scotto – How to Design Mechanical Keyboard PCBs with KiCad](https://www.youtube.com/watch?v=XXXXXXXX)
+. Combined, their videos give enough of a breakdown that anyone could design a PCB, and both creators offer downloadable packages containing parts and footprints.
 
 ---
 
