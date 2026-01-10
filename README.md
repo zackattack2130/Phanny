@@ -6,7 +6,8 @@ This repo is going to show the process of me designing, printing, working in KiC
 
 ## The Design
 
-This board would not have come to life if not for Aran from PCBWay. He reached out to me to see if I had any interest in working on another project, this time utilizing their PCB manufacturing service. I enjoyed the work they did on a case I designed, and I love trying new things, so I took him up on his offer and got to work.
+This board would not have come to life if not for Aran from [PCBWay](https://www.pcbway.com/)
+. He reached out to me to see if I had any interest in working on another project, this time utilizing their PCB manufacturing service. I enjoyed the work they did on a case I designed, and I love trying new things, so I took him up on his offer and got to work.
 
 I knew the basics of what I wanted: split, ortho, staggered column, splay, and a num-row. I decided to get the layout dialed in using the well-known Keyboard Layout Editor. I started playing around with different layouts and testing different splay angles. Then I adjusted how much column stagger I wanted. My aim was to make something comfortable when reaching for any key. Another issue I knew I wanted to overcome from prior boards was the thumb cluster. Thanks to printing several test plates, I think I landed on something very comfortable for long typing sessions while still leaving enough keys that I don’t feel forced into multiple layers.
 
