@@ -24,7 +24,7 @@ This repo is going to show the process of me designing, printing, working in KiC
 ## The Design
 
 ![KLE Layout](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/KLE.jpg)
-**[KLE RAW Data](Phanny/Images/KLE Code Master Only.txt at main · zackattack2130/Phanny)**
+**[KLE RAW Data](https://github.com/zackattack2130/Phanny/blob/e4addd5963249170c31529c75ea8b253667b637a/Images/KLE%20Code%20Master%20Only.txt)**
 
 
 
