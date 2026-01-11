@@ -99,6 +99,11 @@ I ignored that advice from someone who builds robots, the proceded to go through
 
 ## Assembly & Soldering
 
+![Soldering PCBs](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Soldering.jpg)
+![Diode Soldered](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/Diode%20Soldered.jpg)
+
+
+
 Time to solder and hope I correctly referenced the schematic.
 
 Order of operations:
