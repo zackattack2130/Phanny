@@ -24,6 +24,8 @@ This repo is going to show the process of me designing, printing, working in KiC
 ## The Design
 
 ![KLE Layout](https://raw.githubusercontent.com/zackattack2130/Phanny/main/Images/KLE.jpg)
+**[KLE RAW Data](Phanny/Images/KLE Code Master Only.txt at main · zackattack2130/Phanny)**
+
 
 
 This board would not have come to life if not for Aran from [PCBWay](https://www.pcbway.com/)
